@@ -14,6 +14,6 @@ for i in range(0, len(a)):
     if a[i] == " ":
         max_a = max(max_a, int(a[k:i]))
         k = i+1
-max_a = max(max_a, int(a[k: len(a)]))
-print("максимальное число: ",max_a)
+max_a = min(max_a, int(a[k: len(a)]))
+print("минимальное число: ",max_a)
 os.system("pause")
